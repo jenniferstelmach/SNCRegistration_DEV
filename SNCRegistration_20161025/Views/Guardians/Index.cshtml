@@ -1,0 +1,135 @@
+﻿@model IEnumerable<SNCRegistration_20161025.Models.Guardian>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GuardianFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GuardianLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Relationship)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StreetAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.State)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TentNeeded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TentCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AttendingCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comments)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateRegistered)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HealthForm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhotoAck)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateCompleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateConfirmSent)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuardianFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuardianLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Relationship)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StreetAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TentNeeded)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TentCount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AttendingCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comments)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateRegistered)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HealthForm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhotoAck)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateCompleted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateConfirmSent)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.GuardianID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.GuardianID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GuardianID })
+        </td>
+    </tr>
+}
+
+</table>

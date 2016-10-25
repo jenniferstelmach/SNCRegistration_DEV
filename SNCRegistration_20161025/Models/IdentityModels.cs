@@ -29,5 +29,11 @@ namespace SNCRegistration_20161025.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<SNCRegistration_20161025.Models.Participant> Participants { get; set; }
+
+        public System.Data.Entity.DbSet<SNCRegistration_20161025.Models.Guardian> Guardians { get; set; }
+
+        public System.Data.Entity.DbSet<SNCRegistration_20161025.Models.FamilyMember> FamilyMembers { get; set; }
     }
 }
